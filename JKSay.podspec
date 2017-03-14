@@ -1,20 +1,19 @@
-Pod::Spec.new do |spec|
-  spec.name             = "JKSay"
-  spec.version          = "1.0.0"
-  spec.summary          = "a test for pod in iOS"
-  spec.description      = <<-DESC
-                        - a test for pod in iOS
-                        - a test for pod in iOS
-                        - a test for pod in iOS
-                        - a test for pod in iOS
-                        DESC
-  spec.homepage         = "https://github.com/easingboy"
-  spec.license          = "MIT"
-  spec.author           = { "Jacky" => "easingboy@gmail.com" }
-  spec.platform         = :ios, "8.0"
-  spec.source           = { :git => "https://github.com/easingboy/JKSay.git", :tag => spec.version.to_s }
-  spec.source_files     = "JKSayHi/JKSayHi/*.{h,m}"
-  spec.frameworks       = [ "Foundation" ]
-  spec.requires_arc     = true
-  spec.public_header_files = [ "JKSayHi/JKSayHi/JKSayHi.h" ]
+Pod::Spec.new do |s|
+  s.name         = "JKSay"
+  s.version      = "1.0.0"
+  s.summary      = "a test for pod in iOS"
+  s.description  = <<-DESC
+                    MBProgressHUD is an iOS drop-in class that displays a translucent HUD
+                    with an indicator and/or labels while work is being done in a background thread.
+                    The HUD is meant as a replacement for the undocumented, private UIKit UIProgressHUD
+                    with some additional features.
+                   DESC
+  s.homepage     = "https://github.com/easingboy"
+  s.license      = "MIT"
+  s.author       = { "Jacky" => "easingboy@gmail.com" }
+  s.source       = { :git => "https://github.com/easingboy/JKSay.git", :tag => s.version.to_s }
+  s.platform     = :ios
+  s.source_files = "JKSayHi/JKSayHi/*.{h,m}"
+  s.framework    = "Foundation"
+  s.requires_arc = true
 end
