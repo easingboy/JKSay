@@ -10,6 +10,9 @@
 
 @interface JKSayHi : NSObject
 
++ (NSString *)say:(NSString *)msg with:(int)msgid;
+
 - (void)speek;
+- (int)speek:(NSString *)msg with:(int)msgid;
 
 @end
